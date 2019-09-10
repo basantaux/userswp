@@ -30,8 +30,10 @@ add_ThickBox();
 			?>
 
 			<div class="uwp-membership-tab-conatiner">
-				<h2>With our UsersWP Membership you get access to all our products!</h2>
-				<p><a class="button button-primary" href="https://userswp.io/downloads/membership/">View Memberships</a></p>
+				<div class="uwp-membership-content">
+
+			<!--	<h2>With our UsersWP Membership you get access to all our products!</h2>
+				<p><a class="button button-primary" href="https://userswp.io/downloads/membership/">View Memberships</a></p>-->
 				<?php if(defined('WP_EASY_UPDATES_ACTIVE')){?>
 
 					<h2>Have a membership key?</h2>
@@ -43,6 +45,83 @@ add_ThickBox();
 						?>
 					</p>
 				<?php }?>
+
+				<div class="uwp-membership-cta-contet">
+					<div class="main-cta">
+							<h2>Membership benefit Includes:</h2>
+							<div class="feature-list">
+								<ul>
+										<li><span class="dashicons dashicons-yes-alt"></span> Moderation</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> MailChimp</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> WooCommerce</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> bbPress</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Restrict User Signups</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Profile Progress</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Claim myCRED</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> WP Job Manager</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Followers</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> GD Multisite Creator</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Frontend Post</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Activity</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Verified Users</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Ajax Friends</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> List Online Users</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> WP Easy Digital Downloads</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Social Login</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> ReCaptcha</li>
+										
+								</ul>
+							</div>
+							<div class="feature-cta">
+								<h3>Membership <br>Starts from</h3>
+								<h4>$99</h4>
+								<a href="https://wpgeodirectory.com/downloads/membership/" target="_blank">Buy Membership</a>
+							</div>
+
+					</div>
+					<div class="member-testimonials">
+						<h3>Testimonials</h3>
+						<div class="testimonial-content">
+							<div class="t-image">
+								<?php
+									echo '<img src="' . plugins_url( 'images/t-image2.jpeg', dirname(__FILE__) ) . '" > ';
+								?>
+							</div>
+							<div class="t-content">
+								<p>
+									I need a user solution that worked and this fit the bill. Using the shortcodes you can customize it into any theme. A bit of a learning curve, but the guys help.
+I love their wpgeodirectory, and this is proving to be a great tool for custom user profiles etc.
+								</p>
+								<p><strong>mssingley </strong> (@mssingley)</p>
+							</div>
+						</div>
+
+						<div class="testimonial-content">
+							<div class="t-image">
+								<?php
+									echo '<img src="' . plugins_url( 'images/t-image1.jpeg', dirname(__FILE__) ) . '" > ';
+								?>
+							</div>
+							<div class="t-content">
+								<p>
+									Love it, easy to use and had it up & running in minutes.
+The shortcode option is handy for widgets and other bespoke pages.<br><br>
+
+But the list of extra “Pro” features is amazing (some still free like RECAPTCHA)<br><br>
+
+Would not hesitate to use this again on my next project.<br><br>
+								</p>
+								<p><strong>Exo </strong> (@richardshea)</p>
+							</div>
+						</div>
+					</div>
+					<div class="member-footer">
+						<a class="footer-btn" href="https://wpgeodirectory.com/downloads/membership/" target="_blank">Buy Membership</a>
+						<a class="footer-link" href="post-new.php?post_type=gd_place">Create your First Listing</a>
+					</div>
+				</div>
+
+			</div>
 			</div>
 
 			<?php
