@@ -52,13 +52,8 @@ add_ThickBox();
 							<div class="feature-list">
 								<ul>
 										<li><span class="dashicons dashicons-yes-alt"></span> Moderation</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> MailChimp</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> WooCommerce</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> bbPress</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> Restrict User Signups</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> Profile Progress</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Claim myCRED</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> WP Job Manager</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> Followers</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> GD Multisite Creator</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> Frontend Post</li>
@@ -66,10 +61,17 @@ add_ThickBox();
 										<li><span class="dashicons dashicons-yes-alt"></span> Verified Users</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> Ajax Friends</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> List Online Users</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> WP Easy Digital Downloads</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> Social Login</li>
+								</ul>
+								<h3 style="margin: 0px; font-size: 25px; color: #fff;">Integrations</h3>
+								<ul>
+										<li><span class="dashicons dashicons-yes-alt"></span> MailChimp</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> WooCommerce</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> bbPress</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> Claim myCRED</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> WP Job Manager</li>
+										<li><span class="dashicons dashicons-yes-alt"></span> WP Easy Digital Downloads</li>
 										<li><span class="dashicons dashicons-yes-alt"></span> ReCaptcha</li>
-										
 								</ul>
 							</div>
 							<div class="feature-cta">

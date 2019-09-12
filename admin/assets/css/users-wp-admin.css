@@ -880,8 +880,13 @@ body.userswp_page_uwp-addons .lity-container {
 }
 .uwp-membership-cta-contet .feature-list ul {
   margin: 0px;
-  padding: 40px 0px;
+  padding: 40px 0px 20px 0px;
   font-size: 16px;
+}
+.uwp-membership-cta-contet .feature-lis h3 {
+   margin: 0px;
+   color: #fff;
+   font-size: 25px;
 }
 .uwp-membership-cta-contet .feature-list ul li {
   width: 48%;
