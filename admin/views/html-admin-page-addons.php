@@ -36,7 +36,7 @@ add_ThickBox();
 				<p><a class="button button-primary" href="https://userswp.io/downloads/membership/">View Memberships</a></p>-->
 				<?php if(defined('WP_EASY_UPDATES_ACTIVE')){?>
 
-					<h2>Have a membership key?</h2>
+					<h2> <?php echo __("Have a membership key?","userswp"); ?></h2>
 
 					<p>
 						<?php
@@ -48,41 +48,29 @@ add_ThickBox();
 
 				<div class="uwp-membership-cta-contet">
 					<div class="main-cta">
-							<h2>Membership benefit Includes:</h2>
+							<h2><?php echo __("Membership benefit Includes:","userswp"); ?></h2>
 							<div class="feature-list">
 								<ul>
-										<li><span class="dashicons dashicons-yes-alt"></span> Moderation</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Restrict User Signups</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Profile Progress</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Followers</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> GD Multisite Creator</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Frontend Post</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Activity</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Verified Users</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Ajax Friends</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> List Online Users</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Social Login</li>
-								</ul>
-								<h3 style="margin: 0px; font-size: 25px; color: #fff;">Integrations</h3>
-								<ul>
-										<li><span class="dashicons dashicons-yes-alt"></span> MailChimp</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> WooCommerce</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> bbPress</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> Claim myCRED</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> WP Job Manager</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> WP Easy Digital Downloads</li>
-										<li><span class="dashicons dashicons-yes-alt"></span> ReCaptcha</li>
+
+									<?php
+									$addon_obj = new WPInv_Admin_Addons();
+									if ($addons = $addon_obj->get_section_data( 'addons' ) ) {
+										foreach ( $addons as $addon ) {
+											echo '<li><i class="far fa-check-circle fa-sm"></i> '.esc_html( $addon->info->title ).'</li>';
+										}
+									}
+									?>
 								</ul>
 							</div>
 							<div class="feature-cta">
-								<h3>Membership <br>Starts from</h3>
-								<h4>$99</h4>
-								<a href="https://wpgeodirectory.com/downloads/membership/" target="_blank">Buy Membership</a>
+								<h3><?php echo __("Membership ","userswp"); ?> <br><?php echo __("Starts from","userswp"); ?></h3>
+								<h4><?php echo __("$99","userswp"); ?></h4>
+								<a href="https://userswp.io/downloads/membership/" target="_blank"><?php echo __("Buy Membership","userswp"); ?></a>
 							</div>
 
 					</div>
 					<div class="member-testimonials">
-						<h3>Testimonials</h3>
+						<h3><?php echo __("Testimonials","userswp"); ?></h3>
 						<div class="testimonial-content">
 							<div class="t-image">
 								<?php
@@ -90,11 +78,10 @@ add_ThickBox();
 								?>
 							</div>
 							<div class="t-content">
-								<p>
-									I need a user solution that worked and this fit the bill. Using the shortcodes you can customize it into any theme. A bit of a learning curve, but the guys help.
-I love their wpgeodirectory, and this is proving to be a great tool for custom user profiles etc.
+								<p><?php echo __("I need a user solution that worked and this fit the bill. Using the shortcodes you can customize it into any theme. A bit of a learning curve, but the guys help.
+I love their wpgeodirectory, and this is proving to be a great tool for custom user profiles etc.","userswp"); ?>
 								</p>
-								<p><strong>mssingley </strong> (@mssingley)</p>
+								<p><strong><?php echo __("mssingley","userswp"); ?> </strong> <?php echo __("(@mssingley)","userswp"); ?></p>
 							</div>
 						</div>
 
@@ -106,20 +93,22 @@ I love their wpgeodirectory, and this is proving to be a great tool for custom u
 							</div>
 							<div class="t-content">
 								<p>
-									Love it, easy to use and had it up & running in minutes.
-The shortcode option is handy for widgets and other bespoke pages.<br><br>
+									<?php echo __("Love it, easy to use and had it up & running in minutes.
+The shortcode option is handy for widgets and other bespoke pages.
 
-But the list of extra “Pro” features is amazing (some still free like RECAPTCHA)<br><br>
-
-Would not hesitate to use this again on my next project.<br><br>
+But the list of extra “Pro” features is amazing (some still free like RECAPTCHA)","userswp"); ?>
+									<br><br>
+									<?php echo __("Would not hesitate to use this again on my next project.","userswp"); ?>
+<br><br>
 								</p>
-								<p><strong>Exo </strong> (@richardshea)</p>
+								<p><strong><?php echo __("Exo ","userswp"); ?></strong> <?php echo __("(@richardshea)","userswp"); ?></p>
 							</div>
 						</div>
 					</div>
+
 					<div class="member-footer">
-						<a class="footer-btn" href="https://wpgeodirectory.com/downloads/membership/" target="_blank">Buy Membership</a>
-						<a class="footer-link" href="post-new.php?post_type=gd_place">Create your First Listing</a>
+						<a class="footer-btn" href="https://userswp.io/downloads/membership/" target="_blank"><?php echo __("Buy Membership","userswp"); ?></a>
+						<a class="footer-link" href="post-new.php?post_type=gd_place"><?php echo __("Create your First User","userswp"); ?></a>
 					</div>
 				</div>
 
